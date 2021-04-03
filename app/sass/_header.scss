@@ -1,0 +1,40 @@
+.header {
+    height: 500px;
+    padding: 10px;
+    background: url('../images/bg/header_bg.jpg') center ( center / cover ) no-repeat;
+    &__items {
+        display: flex;
+        justify-content: flex-end;
+    }
+    &__item {
+        margin-right: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__icon {
+        width: 31px;
+        height: 31px;
+        cursor: pointer;
+    }
+    &__item-descr {
+        margin-top: 5px;
+        color: $text-color;
+        cursor: pointer;
+    }
+    &__title {
+        margin-top: 100px;
+        font-family: 'Bigelow Rules', cursive;
+        font-size: 150px;
+        color: #F9BB1C;
+        text-align: center;
+        text-shadow: 10px 5px 5px #000;
+    }
+    &__subtitle {
+        margin-top: 45px;
+        color: $text-color;
+        text-align: center;
+        font-size: 36px;
+        text-shadow: 10px 5px 5px #000;
+    }
+}

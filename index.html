@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Bigelow+Rules:regular" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Underdog:regular" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Didact+Gothic:regular" rel="stylesheet" />
+<!--    <link rel="icon" href="app/images/icons/flash.svg" type="image/x-icon">-->
+    <link rel="stylesheet" href="app/css/style.min.css">
+    <title>Ukrainian Diagon Alley</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__items">
+            <div class="header__item">
+                <div class="header__icon js-registr">
+                    <svg class="book js-book">
+                        <use class="change-book js-change-book" xlink:href="app/images/icons/sprite.svg#closed-book">
+                        </use>
+                    </svg>
+                </div>
+                <div class="header__item-descr">Зареєструватись</div>
+            </div>
+            <div class="header__item">
+                <div class="header__icon">
+                    <svg class="door js-door js-entering">
+                        <use class="change-door js-change-door" xlink:href="app/images/icons/sprite.svg#closed-door">
+                        </use>
+                    </svg>
+                </div>
+                <div class="header__item-descr">Увійти</div>
+            </div>
+            <div class="header__item">
+                <div class="header__icon">
+                    <svg class="like">
+                        <use xlink:href="app/images/icons/sprite.svg#like">
+                        </use>
+                    </svg>
+                </div>
+                <div class="header__item-descr">Список бажань</div>
+            </div>
+            <div class="header__item">
+                <div class="header__icon">
+                    <svg class="pot">
+                        <use xlink:href="app/images/icons/sprite.svg#pot">
+                        </use>
+                    </svg>
+                </div>
+                <div class="header__item-descr">Корзина</div>
+            </div>
+        </div>
+        <h1 class="header__title">Ukrainian Diagon Alley</h1>
+        <h2 class="header__subtitle">Відчуй себе частинкою магічного світу</h2>
+    </header>
+
+    <section class="search">
+        <div class="search__wrapper">
+            <div class="search__catalog" id="js-catalog">
+                <div class="search__catalog-title">Каталог</div>
+                <div class="search__arrow">
+                    <svg class="search-arrow">
+                        <use xlink:href="app/images/icons/sprite.svg#search-arrow"></use>
+                    </svg>
+                </div>
+            </div>
+            <div class="search__form">
+                <form class="search__form-item" action="">
+                    <button class="search__btn">Пошук</button>
+                    <input type="search" placeholder="Категорія, назва товару, артикул...">
+                </form>
+            </div>
+            <nav class="search__nav">
+                <ul class="search__nav-items">
+                    <li class="search__nav-item">
+                        <a class="search__nav-link" href="#">Головна</a>
+                    </li>
+                    <li class="search__nav-item">
+                        <a class="search__nav-link" href="#">Про нас</a>
+                    </li>
+                    <li class="search__nav-item">
+                        <a class="search__nav-link" href="#">Акції</a>
+                    </li>
+                    <li class="search__nav-item">
+                        <a class="search__nav-link" href="#">Доставка і оплата</a>
+                    </li>
+                    <li class="search__nav-item">
+                        <a class="search__nav-link" href="#">Контакти</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="catalog" id="js-categories">
+            <div class="catalog__categories">
+                <ul class="catalog__items js-catalog-items">
+                    <li class="catalog__item js-category" data-f="js-first">
+                        Канцелярія та книги
+                            <svg class="catalog-arrow">
+                                <use xlink:href="app/images/icons/sprite.svg#catalog-arrow">
+                                </use>
+                            </svg>
+                    </li>
+                    <li class="catalog__item js-category" data-f="js-second">
+                        Магічні атрибути
+                            <svg class="catalog-arrow">
+                                <use xlink:href="app/images/icons/sprite.svg#catalog-arrow">
+                                </use>
+                            </svg>
+                    </li>
+                    <li class="catalog__item js-category" data-f="js-third">
+                        Одяг та аксесуари
+                            <svg class="catalog-arrow">
+                                <use xlink:href="app/images/icons/sprite.svg#catalog-arrow">
+                                </use>
+                            </svg>
+                    </li>
+                    <li class="catalog__item js-category" data-f="js-fourth">
+                        Прикраси
+                             <svg class="catalog-arrow">
+                                <use xlink:href="app/images/icons/sprite.svg#catalog-arrow">
+                                </use>
+                            </svg>
+                    </li>
+                </ul>
+            </div>
+            <div class="catalog__categories catalog__categories--first js-subcategory js-first">
+                <ul class="catalog__items">
+                    <li class="catalog__item">
+                        <a class="catalog__link" href="#">Пера</a>
+                            <svg class="catalog-arrow">
+                                <use xlink:href="app/images/icons/sprite.svg#catalog-arrow">
+                                </use>
+                            </svg>
+                    </li>
+                    <li class="catalog__item">
+                        <a class="catalog__link" href="#">Блокноти</a>
+                            <svg class="catalog-arrow">
+                                <use xlink:href="app/images/icons/sprite.svg#catalog-arrow">
+                                </use>
+                            </svg>
+                    </li>
+                    <li class="catalog__item">
+                        <a class="catalog__link" href="#">Книги</a>
+                            <svg class="catalog-arrow">
+                                <use xlink:href="app/images/icons/sprite.svg#catalog-arrow">
+                                </use>
+                            </svg>
+                    </li>
+                    <li class="catalog__item">
+                        <a class="catalog__link" href="#">Закладки для книг</a>
+                             <svg class="catalog-arrow">
+                                <use xlink:href="app/images/icons/sprite.svg#catalog-arrow">
+                                </use>
+                            </svg>
+                    </li>
+                </ul>
+            </div>
+            <div class="catalog__categories catalog__categories--second js-subcategory js-second">
+                <ul class="catalog__items">
+                    <li class="catalog__item">
+                        <a class="catalog__link" href="#">Чарівні палички</a>
+                            <svg class="catalog-arrow">
+                                <a href="#"></a>
+                                <use xlink:href="app/images/icons/sprite.svg#catalog-arrow">
+                                </use>
+                            </svg>
+                    </li>
+                    <li class="catalog__item">
+                        <a class="catalog__link" href="#">Брелки</a>
+                            <svg class="catalog-arrow">
+                                <use xlink:href="app/images/icons/sprite.svg#catalog-arrow">
+                                </use>
+                            </svg>
+                    </li>
+                    <li class="catalog__item">
+                        <a class="catalog__link" href="#">Келихи</a>
+                            <svg class="catalog-arrow">
+                                <use xlink:href="app/images/icons/sprite.svg#catalog-arrow">
+                                </use>
+                            </svg>
+                    </li>
+                    <li class="catalog__item">
+                        <a class="catalog__link" href="#">Іграшки</a>
+                             <svg class="catalog-arrow">
+                                <use xlink:href="app/images/icons/sprite.svg#catalog-arrow">
+                                </use>
+                            </svg>
+                    </li>
+                    <li class="catalog__item">
+                        <a class="catalog__link" href="#">Значки</a>
+                             <svg class="catalog-arrow">
+                                <use xlink:href="app/images/icons/sprite.svg#catalog-arrow">
+                                </use>
+                            </svg>
+                    </li>
+                    <li class="catalog__item">
+                        <a class="catalog__link" href="#">Настільні ігри</a>
+                             <svg class="catalog-arrow">
+                                <use xlink:href="app/images/icons/sprite.svg#catalog-arrow">
+                                </use>
+                            </svg>
+                    </li>
+                </ul>
+            </div>
+            <div class="catalog__categories catalog__categories--third js-subcategory js-third">
+                <ul class="catalog__items">
+                    <li class="catalog__item">
+                        <a class="catalog__link" href="#">Мантії</a>
+                            <svg class="catalog-arrow">
+                                <use xlink:href="app/images/icons/sprite.svg#catalog-arrow">
+                                </use>
+                            </svg>
+                    </li>
+                    <li class="catalog__item">
+                        <a class="catalog__link" href="#">Краватки</a>
+                            <svg class="catalog-arrow">
+                                <use xlink:href="app/images/icons/sprite.svg#catalog-arrow">
+                                </use>
+                            </svg>
+                    </li>
+                    <li class="catalog__item">
+                        <a class="catalog__link" href="#">Шкарпетки</a>
+                            <svg class="catalog-arrow">
+                                <use xlink:href="app/images/icons/sprite.svg#catalog-arrow">
+                                </use>
+                            </svg>
+                    </li>
+                    <li class="catalog__item">
+                        <a class="catalog__link" href="#">Сумки</a>
+                             <svg class="catalog-arrow">
+                                <use xlink:href="app/images/icons/sprite.svg#catalog-arrow">
+                                </use>
+                            </svg>
+                    </li>
+                    <li class="catalog__item">
+                        <a class="catalog__link" href="#">Гаманці</a>
+                             <svg class="catalog-arrow">
+                                <use xlink:href="app/images/icons/sprite.svg#catalog-arrow">
+                                </use>
+                            </svg>
+                    </li>
+                    <li class="catalog__item">
+                        <a class="catalog__link" href="#">Рукавиці</a>
+                             <svg class="catalog-arrow">
+                                <use xlink:href="app/images/icons/sprite.svg#catalog-arrow">
+                                </use>
+                            </svg>
+                    </li>
+                    <li class="catalog__item">
+                        <a class="catalog__link" href="#">Шалики</a>
+                             <svg class="catalog-arrow">
+                                <use xlink:href="app/images/icons/sprite.svg#catalog-arrow">
+                                </use>
+                            </svg>
+                    </li>
+                    <li class="catalog__item">
+                        <a class="catalog__link" href="#">Маґлівський одяг</a>
+                             <svg class="catalog-arrow">
+                                <use xlink:href="app/images/icons/sprite.svg#catalog-arrow">
+                                </use>
+                            </svg>
+                    </li>
+                </ul>
+            </div>
+            <div class="catalog__categories catalog__categories--fourth js-subcategory js-fourth">
+                <ul class="catalog__items">
+                    <li class="catalog__item">
+                        <a class="catalog__link" href="#">Кульчики</a>
+                            <svg class="catalog-arrow">
+                                <use xlink:href="app/images/icons/sprite.svg#catalog-arrow">
+                                </use>
+                            </svg>
+                    </li>
+                    <li class="catalog__item">
+                        <a class="catalog__link" href="#">Амулети</a>
+                            <svg class="catalog-arrow">
+                                <use xlink:href="app/images/icons/sprite.svg#catalog-arrow">
+                                </use>
+                            </svg>
+                    </li>
+                    <li class="catalog__item">
+                        <a class="catalog__link" href="#">Намиста</a>
+                            <svg class="catalog-arrow">
+                                <use xlink:href="app/images/icons/sprite.svg#catalog-arrow">
+                                </use>
+                            </svg>
+                    </li>
+                    <li class="catalog__item">
+                        <a class="catalog__link" href="#">Браслети</a>
+                             <svg class="catalog-arrow">
+                                <use xlink:href="app/images/icons/sprite.svg#catalog-arrow">
+                                </use>
+                            </svg>
+                    </li>
+                    <li class="catalog__item">
+                        <a class="catalog__link" href="#">Перстні</a>
+                             <svg class="catalog-arrow">
+                                <use xlink:href="app/images/icons/sprite.svg#catalog-arrow">
+                                </use>
+                            </svg>
+                    </li>
+                    <li class="catalog__item">
+                        <a class="catalog__link" href="#">Діадеми</a>
+                             <svg class="catalog-arrow">
+                                <use xlink:href="app/images/icons/sprite.svg#catalog-arrow">
+                                </use>
+                            </svg>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <div class="decor">
+        <svg class="decor-line">
+            <use xlink:href="app/icons/sprite.svg#decor-line">
+            </use>
+        </svg>
+    </div>
+
+    <section class="content">
+        <h2 class="content__title title">
+            Про нас
+        </h2>
+        <div class="content__wrapper">
+            <div class="content__img">
+                <img class="content__photo" src="app/images/bg/about_bg.jpg" alt="diagon alley">
+            </div>
+            <div class="content__descr">
+                Вітаємо на сайті української Алеї Діаґон! Ми відкриті як для чарівників, так і для маґлів. Тут Ви знайдете необхідну магічну атрибутику. Поки ми лише онлайн, однак Ви здатні допомогти пришвидшити відкриття офф-лайн магазинчиків. Вірте в дива, відкривайте для себе нові грані і ласкаво просимо у світ магії!  
+            </div>
+            <div class="content__img">
+                <img class="content__photo" src="app/images/bg/about_bg1.jpg" alt="diagon alley">
+            </div>
+        </div>
+    </section>
+
+    <div class="decor">
+        <svg class="decor-line">
+            <use xlink:href="app/images/icons/sprite.svg#decor-line">
+            </use>
+        </svg>
+    </div>
+
+    <footer class="footer">
+        <div class="footer__wrapper">
+            <div class="footer__schedule">
+                <p class="footer__title">Графік роботи:</p>
+                <p class="footer__subtitle"> <span>пн - пт</span> 09:00 - 8:00 </p>
+                <p class="footer__subtitle"> <span>сб - нд</span> 10:00 - 15:00 </p>
+            </div>
+            <div class="footer__social">
+                <p class="footer__title">Зв’яжіться з нами:</p>
+                <div class="footer__social-icons">
+                    <a class="footer__link" href="https://www.facebook.com/anastasiiabogoslavskaia" target="_blank">
+                        <svg class="facebook">
+                            <use xlink:href="app/images/icons/sprite.svg#facebook">
+                            </use>
+                        </svg>
+                    </a>
+                    <a class="footer__link" href="https://www.instagram.com/invites/contact/?i=ulm6659ym7qx&utm_content=1ombzn9" target="_blank">
+                        <svg class="instagram">
+                            <use xlink:href="app/images/icons/sprite.svg#instagram">
+                            </use>
+                        </svg>
+                    </a>
+                    <a class="footer__link" href="https://t.me/anastasiia_naziiuta" target="_blank">
+                        <svg class="telegram">
+                            <use xlink:href="app/images/icons/sprite.svg#telegram">
+                            </use>
+                        </svg>
+                    </a>
+                </div>
+                   
+            </div>
+            <div class="footer__menu">
+                <ul class="footer__menu-items">
+                    <li class="footer__menu-item">
+                        <a class="footer__menu-link" href="#">Головна</a>
+                    </li>
+                    <li class="footer__menu-item">
+                        <a class="footer__menu-link" href="#">Про нас</a>
+                    </li>
+                    <li class="footer__menu-item">
+                        <a class="footer__menu-link" href="#">Акції</a>
+                    </li>
+                    <li class="footer__menu-item">
+                        <a class="footer__menu-link" href="#">Доставка і оплата</a>
+                    </li>
+                    <li class="footer__menu-item">
+                        <a class="footer__menu-link" href="#">Контакти</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <div class="overlay js-overlay">
+        <!--Вікно реєстрації -->
+        <div class="modal modal--signup js-signup">
+                <div class="close js-close">&times;</div>
+                <h2 class="modal__title">Реєстрація</h2>
+                <div class="modal__descr">
+                    <h3 class="modal__subtitle">
+                        Будь ласка, введіть вказанні дані для реєстрації.
+                    </h3>
+                </div>
+                <div class="modal__form">
+                    <form class="modal__form-area" action="#">
+                        <label class="modal__form-label" for="form-last-name">Прізвище*</label>
+                        <input class="modal__form-last-name" id="form-last-name" type="text" name="last-name" placeholder="Введіть Ваше прізвище">
+                        <label class="modal__form-label" for="form-name">Ім'я*</label>
+                        <input class="modal__form-name" id="form-name" type="text" name="name" placeholder="Введіть Ваше ім'я">
+                        <label class="modal__form-label" for="form-phone">Номер телефону</label>
+                        <input class="modal__form-phone" id="form-phone" type="tel" name="phone" placeholder="Введіть Ваш номер телефону">
+                        <label class="modal__form-label" for="form-email">E-mail*</label>
+                        <input class="modal__form-email" id="form-email" type="email" name="email" placeholder="Введіть Ваш e-mail">
+                        <label class="modal__form-label" for="form-login">Логін*</label>
+                        <input class="modal__form-login" id="form-login" type="text" name="login" placeholder="Придумайте логін">
+                        <label class="modal__form-label" for="form-password">Пароль (від 6 символів A-Z, a-z, 0-9, спецсимволи)*</label>
+                        <input class="modal__form-password" id="form-password" type="password" name="password" placeholder="Ваш пароль">
+                        <button class="modal__btn js-signup-btn">Зареєструватись</button>
+                    </form>
+                </div>
+            </div>
+        <!--Вікно входу -->
+        <div class="modal modal--signin js-signin">
+            <div class="close js-close">&times;</div>
+            <h2 class="modal__title">Вхід</h2>
+            <div class="modal__descr">
+                <h3 class="modal__subtitle">
+                    Будь ласка, введіть вказанні дані для входу.
+                </h3>
+            </div>
+            <div class="modal__form">
+                <form class="modal__form-area" action="#">
+                    <label class="modal__form-label" for="login">Логін або E-mail*</label>
+                    <input class="modal__form-login" id="login" type="text" name="login" placeholder="Введіть Ваш логін або E-mail">
+                    <label class="modal__form-label" for="password">Пароль*</label>
+                    <input class="modal__form-password" id="password" type="password" name="password" placeholder="Ваш пароль">
+                    <button class="modal__btn js-signin-btn">Увійти</button>
+                </form>
+            </div>
+        </div>
+        <!-- Дякуєм за реєстрацію -->
+        <div class="modal modal--thanks js-thanks">
+            <div class="close js-close">&times;</div>
+            <h2 class="modal__title modal__title--thanks">Дякуєм за реєстрацію!</h2>
+        </div>
+    </div>
+    <script src="app/js/script.min.js"></script>
+</body>
+</html>

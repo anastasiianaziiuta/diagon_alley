@@ -1,0 +1,6 @@
+/node_modules/
+
+/gp/
+/app/python_scripts/
+/dist/
+/.idea/

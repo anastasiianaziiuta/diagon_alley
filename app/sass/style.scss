@@ -1,0 +1,16 @@
+@import 'variables';
+*{
+  margin: 0;
+  font-family: 'Underdog', cursive;
+}
+.decor {
+  height: 70px;
+}
+
+@import 'icons';
+@import 'header';
+@import 'search';
+@import 'catalog';
+@import 'content';
+@import 'footer';
+@import 'modal';

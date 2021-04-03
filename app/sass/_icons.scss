@@ -1,0 +1,19 @@
+.door, .like, .pot, .book, .search-arrow, .decor-line, .facebook, .instagram, .telegram, .catalog-arrow {
+    fill: #c4971f;
+    width: 31px;
+    height: 31px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.like:hover, .pot:hover, .facebook:hover, .instagram:hover, .telegram:hover {
+    fill: #e3d5ae;
+}
+.search-arrow, .catalog-arrow {
+    width: 21px;
+    height: 21px;
+}
+.decor-line {
+    width: 100%;
+    height: 100%;
+    cursor: inherit;
+}

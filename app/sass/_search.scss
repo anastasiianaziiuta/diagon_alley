@@ -1,0 +1,87 @@
+.search {
+    padding: 0 10px;
+    height: 60px;
+    background-color: $main-color;
+    &__wrapper {
+        height: 100%;
+        margin-bottom: 5px;
+        display: flex;
+    }
+    &__catalog {
+        width: 25%;
+        font-family: 'Underdog', cursive;
+        color: $text-color;
+        font-size: 28px;
+        text-align: center;
+        border-right: 2px solid $text-color;
+        border-left: 2px solid $text-color;
+        cursor: pointer;
+    }
+    &__form-item {
+        width: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__form {
+        width: 35%;
+        display: flex;
+        border-right: 2px solid $text-color;
+        input {
+            width: 65%;
+            height: 35px;
+            background-color: rgba(254, 248, 248, 0.7);
+            border: none;
+            outline: none;
+        }
+        input::-webkit-input-placeholder{
+            color: rgba(0, 0, 0, 0.4);
+            font-size: 18px;
+            text-align: center;
+        }
+        input:-moz-placeholder {
+            color: rgba(0, 0, 0, 0.4);
+            font-size: 18px;
+            text-align: center;
+        }
+        input:-ms-input-placeholder {
+            color: rgba(0, 0, 0, 0.4);
+            font-size: 18px;
+            text-align: center;
+        }
+        input::-webkit-search-decoration,
+        input::-webkit-search-cancel-button,
+        input::-webkit-search-results-button,
+        input::-webkit-search-results-decoration { 
+            display: none; 
+        }
+    }
+    &__btn {
+        width: 25%;
+        height: 35px;
+        background-color: #C05858;
+        border: none;
+        color: $text-color;
+        font-size: 25px;
+    }
+    &__nav {
+        width: 40%;
+        border-right: 2px solid $text-color;
+    }
+    &__nav-items {
+        height: 100%;
+        display: flex;
+        list-style: none;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__nav-item {
+        margin-right: 10px;
+    }
+    &__nav-link {
+        font-size: 18px;
+        color: $text-color;
+        text-decoration: none;
+    }
+}

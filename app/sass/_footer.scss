@@ -1,0 +1,61 @@
+.footer {
+    padding: 10px;
+    height: 120px;
+    background-color: $main-color;
+    font-family: 'Didact Gothic', sans-serif;
+    color: $text-color;
+    font-size: 20px;
+    text-align: center;
+    &__wrapper {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border-right: 2px solid $text-color;
+        border-left: 2px solid $text-color;
+    }
+    &__schedule {
+        width: 30%;
+
+    }
+    &__title {
+        font-family: 'Underdog', cursive;
+        margin-bottom: 10px;
+    }
+    &__subtitle {
+        text-transform: uppercase;
+        span {
+            font-size: 18px;
+        }
+    }
+    &__social {
+        width: 30%;
+        border-right: 2px solid $text-color;
+        border-left: 2px solid $text-color;
+    }
+    &__social-icons {
+        display: flex;
+        justify-content: space-around;
+    }
+    &__link {
+        text-decoration: none;
+    }
+    &__menu {
+        width: 30%;
+        
+    }
+    &__menu-items {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__menu-item {
+        margin-right: 10px;
+    }
+    &__menu-link {
+        font-size: 18px;
+        color: $text-color;
+        text-decoration: none;
+    }
+}
