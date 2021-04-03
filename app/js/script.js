@@ -8,17 +8,17 @@ let door = document.querySelector('.js-door'),
     function changeIcon(i,e){
         i.addEventListener('mouseenter',() => {
             if (e === changeDoor ) {
-                e.setAttribute('xlink:href', 'images/icons/sprite.svg#open-door');
+                e.setAttribute('xlink:href', 'app/icons/sprite.svg#open-door');
             } else {
-                e.setAttribute('xlink:href', 'images/icons/sprite.svg#open-book');
+                e.setAttribute('xlink:href', 'app/icons/sprite.svg#open-book');
             }
 
         });
         i.addEventListener('mouseout', () => {
             if (e === changeDoor ) {
-                e.setAttribute('xlink:href', 'images/icons/sprite.svg#closed-door');
+                e.setAttribute('xlink:href', 'app/icons/sprite.svg#closed-door');
             } else {
-                e.setAttribute('xlink:href', 'images/icons/sprite.svg#closed-book');
+                e.setAttribute('xlink:href', 'app/icons/sprite.svg#closed-book');
             }
         });
     }
